@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 02 16:36:39 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>231 seconds (231852 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nag.nagp.testcases.Test_Redbus_BusList_Page.Test_BusListFilters()'><b>Test_BusListFilters</b><br>Test class: com.nag.nagp.testcases.Test_Redbus_BusList_Page<br>Test method: Validate the type of filter available on Bus list page.</td>
+<td></td>
+<td>3</td>
+<td>com.nag.nagp.testcases.Test_Redbus_BusList_Page@69453e37</td></tr>
+<tr>
+<td title='com.nag.nagp.testcases.Test_Redbus_BusList_Page.Test_BusListResetFilter()'><b>Test_BusListResetFilter</b><br>Test class: com.nag.nagp.testcases.Test_Redbus_BusList_Page<br>Test method: Validate reset button when no filter is selected.</td>
+<td></td>
+<td>115</td>
+<td>com.nag.nagp.testcases.Test_Redbus_BusList_Page@69453e37</td></tr>
+<tr>
+<td title='com.nag.nagp.testcases.Test_Redbus_BusList_Page.Test_BusList_With_LiveTracking_Filter()'><b>Test_BusList_With_LiveTracking_Filter</b><br>Test class: com.nag.nagp.testcases.Test_Redbus_BusList_Page<br>Test method: Validate when user selected filters Live Tracking.</td>
+<td></td>
+<td>15</td>
+<td>com.nag.nagp.testcases.Test_Redbus_BusList_Page@69453e37</td></tr>
+<tr>
+<td title='com.nag.nagp.testcases.Test_Redbus_HotelDetails.Test_MaxGuestPerRoom()'><b>Test_MaxGuestPerRoom</b><br>Test class: com.nag.nagp.testcases.Test_Redbus_HotelDetails<br>Test method: Validate the maximum number of Guest allowed in 1 hotel room.</td>
+<td></td>
+<td>2</td>
+<td>com.nag.nagp.testcases.Test_Redbus_HotelDetails@ae13544</td></tr>
+<tr>
+<td title='com.nag.nagp.testcases.Test_Redbus_BusDetails.Test_Validate_BusCountWithWifi()'><b>Test_Validate_BusCountWithWifi</b><br>Test class: com.nag.nagp.testcases.Test_Redbus_BusDetails<br>Test method: Validate the number of buses with Wifi Amenities when user select Wifi.</td>
+<td></td>
+<td>53</td>
+<td>com.nag.nagp.testcases.Test_Redbus_BusDetails@6f4a47c7</td></tr>
+<tr>
+<td title='com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage.Test_Validate_BusTicket_Fields()'><b>Test_Validate_BusTicket_Fields</b><br>Test class: com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage<br>Test method: Validate the fields on Redbus bus ticket page.</td>
+<td></td>
+<td>0</td>
+<td>com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage@2002fc1d</td></tr>
+<tr>
+<td title='com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage.Test_Validate_BusesBetween_Delhi_Jaipur()'><b>Test_Validate_BusesBetween_Delhi_Jaipur</b><br>Test class: com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage<br>Test method: Validate the number of buses on the route when Source is New Delhi and Destination is Jaipur.</td>
+<td></td>
+<td>4</td>
+<td>com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage@2002fc1d</td></tr>
+<tr>
+<td title='com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage.Test_Validate_BusesSameSourceDestination()'><b>Test_Validate_BusesSameSourceDestination</b><br>Test class: com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage<br>Test method: Validate the number of buses when Source and Destination are same.</td>
+<td></td>
+<td>2</td>
+<td>com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage@2002fc1d</td></tr>
+<tr>
+<td title='com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage.Test_Validate_BusesWithNoOriginDate()'><b>Test_Validate_BusesWithNoOriginDate</b><br>Test class: com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage<br>Test method: Validate the number of buses when Source and Destination are same.</td>
+<td></td>
+<td>1</td>
+<td>com.nag.nagp.testcases.Test_Redbus_BusTicket_BookingPage@2002fc1d</td></tr>
+<tr>
+<td title='com.nag.nagp.testcases.Test_Redbus_BusDetails.Test_Validate_WifiIcon()'><b>Test_Validate_WifiIcon</b><br>Test class: com.nag.nagp.testcases.Test_Redbus_BusDetails<br>Test method: Validate wifi icons with the buses having Wifi Amenities.</td>
+<td></td>
+<td>5</td>
+<td>com.nag.nagp.testcases.Test_Redbus_BusDetails@6f4a47c7</td></tr>
+</table><p>
+</body>
+</html>

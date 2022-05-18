@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.nag.nagp.testListeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.nag.nagp.testcases.Test_Redbus_BusList_Page">
+        <methods>
+          <include name="Test_BusListResetFilter"/>
+          <include name="getResult"/>
+          <include name="BeforeSuite"/>
+          <include name="tearDown"/>
+          <include name="initializeRestClient"/>
+        </methods>
+      </class> <!-- com.nag.nagp.testcases.Test_Redbus_BusList_Page -->
+      <class name="com.nag.nagp.testcases.Test_Redbus_BusDetails">
+        <methods>
+          <include name="getResult"/>
+          <include name="BeforeSuite"/>
+          <include name="tearDown"/>
+          <include name="initializeRestClient"/>
+          <include name="Test_Validate_BusCountWithWifi"/>
+        </methods>
+      </class> <!-- com.nag.nagp.testcases.Test_Redbus_BusDetails -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

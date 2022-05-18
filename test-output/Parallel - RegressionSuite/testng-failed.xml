@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Parallel - RegressionSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.nag.nagp.testListeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Test Application - Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.nag.nagp.testcases.Test1">
+        <methods>
+          <include name="getResult"/>
+          <include name="beforeTest"/>
+          <include name="getV"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="initializeRestClient"/>
+        </methods>
+      </class> <!-- com.nag.nagp.testcases.Test1 -->
+    </classes>
+  </test> <!-- Test Application - Chrome(failed) -->
+</suite> <!-- Failed suite [Parallel - RegressionSuite] -->
